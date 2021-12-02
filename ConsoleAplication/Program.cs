@@ -1,4 +1,6 @@
-﻿using ExemplosPOO.Models;
+﻿using ExemplosPOO.Helper;
+using ExemplosPOO.Interfaces;
+using ExemplosPOO.Models;
 using System;
 
 namespace ExemplosPOO
@@ -7,6 +9,25 @@ namespace ExemplosPOO
     {
         static void Main(string[] args)
         {
+            //Exemplo Arquivos
+            var caminho = "C:\\TrabalhandoComArquivos";
+
+            FileHelper helper = new FileHelper();
+            //helper.ListarDiretorios(caminho);
+            helper.ListarArquivosDiretorios(caminho);
+
+            //Exemplo de Interface
+            //ICalculadora calc = new Calculadora();
+            //Console.WriteLine( calc.Somar(10,20) );
+
+            //Exemplo Classes Object
+            //Computador pc = new Computador();
+            //Console.WriteLine(pc.ToString());
+
+            //Exemplo Abstração
+            //Corrente c1 = new Corrente();
+            //c1.Creditar(100);
+            //c1.ExibirSaldo();
 
             // Exemplo de Polimorfismo em tempo de compilação (Overload)
             //Calculadora calc = new Calculadora();
